@@ -1,16 +1,31 @@
-import BackgroundImg from "@/components/background";
+import 'bootstrap/dist/css/bootstrap.css'
 
 export default function Home() {
   return (
     <main>
-      <BackgroundImg />
-      <div className="grid grid-cols-12 grid-rows-9 gap-x-4  absolute inset-0" style={{ 'padding': '0px 5% 0px 5%'}}>
-          <div className="col-span-5 row-span-1 h-screen">
-            <h1 className="text-7xl font-bold mb-5">ТРЕЗВЫЙ ВОДИТЕЛЬ</h1>
-            <h2 className="text-2xl font-bold text-gray-400 text-nowrap">по <span className="text-3xl">Москве</span><br/> и <span className="text-3xl text-nowrap">Московской обл.</span>
-              <span className=" ml-4 text-4xl align-bot">24/7</span>
-            </h2>
-        </div>
+      <div>
+        <h1 className="text-7xl font-bold mb-5 pt-2">ТРЕЗВЫЙ ВОДИТЕЛЬ</h1>
+        <text className="text-2xl font-bold text-gray-400 text-nowrap">по <span className="text-3xl">Москве</span><br /> и <span className="text-3xl text-nowrap">Московской обл.</span>
+          <span className=" ml-4 text-4xl align-bot">24/7</span>
+        </text>
+      </div>
+      <p>СТОИМОСТЬ УСЛУГИ ТРЕЗВОГО ВОДИТЕЛЯ В МОСКВЕ И МО</p>
+      <h2>Цены</h2>
+      <div>
+        <h3>«Трезвый водитель»</h3>
+        <p>Поездка в пределах МКАД 1800 ₽/час<br />После первого часа 200 ₽/ 10 мин или 1200 руб/час<br />Ожидание  5 мин. бесплатно  далее<br />10 мин. 200 рулей</p>
+      </div>
+      <div>
+        <h3>«Трезвый водитель»</h3>
+        <p>Поездка  Москва - МО<br />2000 ₽/час  +500 ₽ каждые 10 км от МКАД<br />Поездка Москва - ЦКАД  (более 40 км)<br />2500 ₽/час +500<br />каждые 10 км от МКАД
+          После первого часа<br />200 ₽/10 мин или 1200 ₽/час<br />Ожидание 5 минут бесплатно далее  10 мин. 200 рублей</p>
+      </div>
+      <div>
+        <h3>«Трезвый водитель»</h3>
+        <p>Поездка МО -  Москва                                       2000 ₽/час +500 ₽ каждые 10 км до МКАД
+          Поездка  ЦКАД  (более 40 км)- Москва               2500 ₽/час +500 ₽ каждые 10 км до МКАД
+          После первого часа                                                    200 ₽/10 мин или 1200 ₽/час
+          Ожидание 5 минут бесплатно далее   10 мин. 200 рублей</p>
       </div>
     </main>
   );
