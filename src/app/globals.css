@@ -1,0 +1,22 @@
+@import "normalize.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.lending-text {
+    color: #FFFFFF;
+    font-weight: 600;
+    font: bold Roboto, sans-serif;
+    font-size: 83px;
+    padding-top: 50vh;
+    text-align: left;
+    line-height: 1.2em;
+}
+
+.leanding {
+    width: 100%;
+    background-image: url('../assets/car-img.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 0 5vw 0 5vw;
+}
