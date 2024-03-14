@@ -34,7 +34,7 @@ export default function Home() {
         </p>
         <div className="pt-16">
           <div className=" advantages-text text-center">ДОВЕРЬТЕ ДЕЛО ПРОФЕССИОНАЛАМ</div>
-          <h2 className=" text-regular-bold text-center">Преимущества</h2>
+          <h2 className=" text-regular-bold text-center">ПРЕИМУЩЕСТВА</h2>
         </div>
         <div>
           <SlideBar />
