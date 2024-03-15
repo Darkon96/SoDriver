@@ -1,12 +1,19 @@
-import Price from "@/components/priceBlock";
-import SlideBar from "@/components/slideBar";
-import AddServices from "@/components/addServices";
+import Price from "../components/priceBlock";
+import AddServices from "../components/addServices";
 import 'bootstrap/dist/css/bootstrap.css'
+import dynamic from "next/dynamic";
+import car from '../assets/car-img.jpg';
+
+const SlideBar = dynamic(() => import("../components/slideBar"), {
+  ssr: false,
+});
 
 export default function Home() {
   return (
     <main>
-      <div className="leanding grid grid-cols-12 gap-x-2">
+      <div className="leanding grid grid-cols-12 gap-x-2" style={{
+        'background-image': `url(${car.src})`,
+      }}>
         <div className="h-screen col-span-12">
           <div className="flex justify-end">
             <a href="tel:+79001111111" className="text-regular mt-8">+7 (909) 111-11-11</a>
@@ -36,16 +43,19 @@ export default function Home() {
           <div className=" advantages-text text-center">ДОВЕРЬТЕ ДЕЛО ПРОФЕССИОНАЛАМ</div>
           <h2 className=" text-regular-bold text-center">ПРЕИМУЩЕСТВА</h2>
         </div>
-        <div>
-          <SlideBar />
+        <div className="grid grid-cols-12 gap-x-2  pt-9">
+        <SlideBar />
         </div>
-        <div>
-          <p>Не рискуйте!<br/>Наш профессиональный водитель приедет на помощь, сядет за руль вашего автомобиля и отвезет вас домой или в нужное место. Быстро и безопасно.</p>
+        <div className="grid grid-cols-12 grid-rows-2 gap-x-2">
+          <p className="text-center pt-10 text-regular col-span-12">Не рискуйте!</p>
+          <p className="col-span-8 col-start-3 text-center ">Наш профессиональный водитель приедет на помощь, сядет за руль вашего автомобиля и отвезет вас домой или в нужное место. Быстро и безопасно.</p>
         </div>
-        <div>
-          <h2>ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ</h2>
-           <AddServices />
-           <AddServices />
+        <div className="pt-16">
+          <h2 className="text-center">ДОПОЛНИТЕЛЬНЫЕ<br/> УСЛУГИ</h2>
+          <div className="flex">
+            <AddServices />
+            <AddServices />
+          </div>
         </div>
       </div>
     </main>
