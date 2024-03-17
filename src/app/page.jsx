@@ -40,8 +40,7 @@ export default function Home() {
           <Price price="2500" text="Поездка за ЦКАД"/>
         </div>
         <p className="price-block-text-light">
-        *После первого часа 200 ₽/10 мин или 1200 ₽/час<br />
-        Ожидание 5 минут бесплатно далее 10 мин. 200 рублей
+        *Первый час включено 10км
         </p>
         <div className="pt-16">
           <div className=" advantages-text text-center">ДОВЕРЬТЕ ДЕЛО ПРОФЕССИОНАЛАМ</div>
