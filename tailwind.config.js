@@ -10,13 +10,6 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
     "./node_modules/tw-elements/js/**/*.js"
   ],
-  theme: {
-    extend: {
-      backgroundImage: {
-        'heroImage': "url('/assets/car-img.jpg')",
-      }
-    },
-  },
   plugins: [require("tw-elements/plugin.cjs")]
 }
 
