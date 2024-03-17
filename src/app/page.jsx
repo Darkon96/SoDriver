@@ -4,6 +4,9 @@ import 'bootstrap/dist/css/bootstrap.css'
 import dynamic from "next/dynamic";
 import Image from 'next/image';
 import car from '../assets/car-img.jpg';
+import carBot1 from '../assets/bot-car1.png';
+import carBot2 from '../assets/bot-car2.png';
+import Footer from "../components/footer";
 
 const SlideBar = dynamic(() => import("../components/slideBar"), {
   ssr: false,
@@ -17,7 +20,7 @@ export default function Home() {
       }}>
         <div className="h-screen col-span-12">
           <div className="flex justify-end">
-            <a href="tel:+79001111111" className="text-regular mt-8">+7 (909) 111-11-11</a>
+            <a href="tel:+79688508188" className="text-regular mt-8">+7 (968) 850-81-88</a>
           </div>
           <div className="grid grid-cols-12 gap-x-2">
             <div className=" col-span-6">
@@ -32,9 +35,9 @@ export default function Home() {
       </div>
       <div className="leanding-main">
         <div className=" pb-7 w-full flex gap-x-6 justify-center pt-20">
-          <Price />
-          <Price />
-          <Price />
+          <Price price="1800" text="Поездка в пределах МКАД"/>
+          <Price price="2000" text="Поездка за МКАД"/>
+          <Price price="2500" text="Поездка за ЦКАД"/>
         </div>
         <p className="price-block-text-light">
         *После первого часа 200 ₽/10 мин или 1200 ₽/час<br />
@@ -58,55 +61,47 @@ export default function Home() {
             <AddServices />
           </div>
         </div>
-        <div className="grid grid-cols-12 grid-rows-1 gap-x-8">
+        <div className="grid grid-cols-12 grid-rows-1 gap-x-8  pt-32">
           <Image
-                src={car}
+                src={carBot1}
                 alt="Wild Landscape"
-                className="col-start-1 col-span-6 "
+                className="col-start-1 col-span-5"
           />
-          <div className="col-span-4 col-start-7">
-            <h3>
-            Услуга «трезвый водитель» в Москве и Московской области
-            </h3>
-            <p>
+          <div className="col-span-4 col-start-6">
+            <p className="bot-bold-text">
             Выпили? Чувствуете себя нехорошо? Плохая погода? Не уверены о себе, как водитель?
             </p>
-            <p>
+            <p className="bot-bold-text">
             Не подвергайтесь опасности - не садитесь за руль!
             </p>
-            <p>
+            <p className="indent">
             Воспользуйтесь сервисом "Трезвый водитель" и доберитесь домой без "приключений". Наш профессиональный водитель доставит вас, ваших пассажиров и машину до места назначения в целости и сохранности.
             </p>
-            <p>
+            <p className="indent">
             Наша компания располагает необходимым количеством трезвых водителей, так что Вы никогда не услышите на свой запрос отказа, связанного с нехваткой водителей. Основным преимуществом нашей компании являются умеренные тарифы различного класса.
             </p>
           </div> 
         </div>
-        <div className="grid grid-cols-12 grid-rows-1 gap-x-8">
-          <div className="col-start-1 col-span-4">
-            <h3>
-            Услуга «трезвый водитель» в Москве и Московской области
-            </h3>
-            <p>
-            Выпили? Чувствуете себя нехорошо? Плохая погода? Не уверены о себе, как водитель?
-            </p>
-            <p>
-            Не подвергайтесь опасности - не садитесь за руль!
-            </p>
-            <p>
-            Воспользуйтесь сервисом "Трезвый водитель" и доберитесь домой без "приключений". Наш профессиональный водитель доставит вас, ваших пассажиров и машину до места назначения в целости и сохранности.
-            </p>
-            <p>
-            Наша компания располагает необходимым количеством трезвых водителей, так что Вы никогда не услышите на свой запрос отказа, связанного с нехваткой водителей. Основным преимуществом нашей компании являются умеренные тарифы различного класса.
-            </p>
+        <div className="grid grid-cols-12 grid-rows-1 gap-x-8 pt-16 pb-28">
+          <div className="col-start-1 col-span-5">
+            <p className="bot-bold-text">Наши тарифы ме имеют скрытых доплат. Гарантируем, стоимость не вырастет в процессе поездки.</p>
+            <ul style={{
+              'list-style-type': 'square',
+            }}>
+              <li>Оплата остановок по заранее согласованному маршруту - отсутствует.</li>
+              <li>Ночные или праздничные наценки - отсутствует.</li>
+              <li>Оплата нашему водителю обратной дороги - за наш счёт.</li>
+              <li>Отсутствие расширенной страховки ОСАГО - за наш счёт.</li>
+            </ul>
           </div>
           <Image
-                src={car}
+                src={carBot2}
                 alt="Wild Landscape"
-                className="col-span-6 col-start-5"
+                className="col-span-5 col-start-6"
           />
         </div>
       </div>
+      <Footer />
     </main>
   );
 }

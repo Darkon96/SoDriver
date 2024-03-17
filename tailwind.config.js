@@ -10,6 +10,13 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
     "./node_modules/tw-elements/js/**/*.js"
   ],
+  theme: {
+    extend: {
+      spacing: {
+        '128': '20%',
+      }
+    }
+  },
   plugins: [require("tw-elements/plugin.cjs")]
 }
 

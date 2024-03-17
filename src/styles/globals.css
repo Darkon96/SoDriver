@@ -9,6 +9,24 @@ p, h1, h2, div {
     cursor: default;
 }
 
+a:hover {
+    /* Цвет при наведении */
+    color: #787878;
+}
+
+a:visited {
+    /* Цвет посещённой ссылки */
+    color: #787878;
+}
+
+a:active {
+    /* Цвет ссылки при клике */
+    color: #787878;
+}
+
+.a-color {
+    color: inherit;
+}
 .text-bold-h1 {
     font-weight: 600;
     font: bold Roboto, sans-serif;
@@ -79,4 +97,23 @@ p, h1, h2, div {
     font: regular Roboto, sans-serif;
     font-size: 15px;
     text-align: center;
+}
+.bot-bold-text {
+    font-weight: 900;
+    font: regular Roboto, sans-serif;
+    font-size: 16px;
+    text-underline-position: under;
+}
+.indent {
+    text-indent: 25px;
+}
+.footer {
+    padding: 0 5vw 0 5vw;
+}
+.bot-company-text {
+    font-weight: 300;
+    font: regular Roboto, sans-serif;
+    font-size: 12px;
+    text-underline-position: under;
+    color:#575757;
 }
