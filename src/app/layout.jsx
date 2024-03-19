@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <meta name="yandex-verification" content="d5fc8a70dd638ae9" />
+      <meta name="yandex-verification" content="008e50b2267486d2" />
       <body className={inter.className}>
         {children} 
       </body>
