@@ -16,12 +16,12 @@ a:hover {
 
 a:visited {
     /* Цвет посещённой ссылки */
-    color: #787878;
+    color: #FFFFFF;
 }
 
 a:active {
     /* Цвет ссылки при клике */
-    color: #787878;
+    color: #454444;
 }
 
 .a-color {
@@ -30,7 +30,6 @@ a:active {
 .text-bold-h1 {
     font-weight: 600;
     font: bold Roboto, sans-serif;
-    font-size: 83px;
     padding-top: 50vh;
     text-align: left;
     line-height: 1.2em;
@@ -40,7 +39,6 @@ a:active {
     color: #FFFFFF;
     font-weight: 200;
     font: regular Roboto, sans-serif;
-    font-size: 24px;
     text-align: left;
     line-height: 1.2em;
     text-underline-position: under;
@@ -49,7 +47,6 @@ a:active {
 .text-regular-bold {
     font-weight: 400;
     font: regular Roboto, sans-serif;
-    font-size: 40px;
 }
 
 .leanding {
@@ -75,22 +72,18 @@ a:active {
 .price-block-text-bold {
     font-weight: 900;
     font: regular Roboto, sans-serif;
-    font-size: 20px;
     text-align: center;
 }
 
 .price-block-text-regular {
     font-weight: 300;
     font: regular Roboto, sans-serif;
-    font-size: 18px;
     text-align: center;
 }
 
 .price-block-text-light {
     font-weight: 300;
     font: regular Roboto, sans-serif;
-    font-size: 14px;
-    text-align: center;
 }
 .advantages-text {
     font-weight: 300;

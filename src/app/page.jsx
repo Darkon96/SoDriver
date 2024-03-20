@@ -23,30 +23,37 @@ export default function Home() {
             <a href="tel:+79096298188" className="text-regular mt-8">+7 (909) 629-81-88</a>
           </div>
           <div className="grid grid-cols-12 gap-x-2">
-            <div className=" col-span-6">
-            <h1 className="text-bold-h1">ТРЕЗВЫЙ ВОДИТЕЛЬ</h1>
+            <div className="col-span-12 md:col-span-7">
+            <h1 className="text-bold-h1 text-5xl">ТРЕЗВЫЙ ВОДИТЕЛЬ</h1>
               <div className="flex">
-                <p className="text-regular pt-4">по Москве и Московской области</p>
-                <p className="text-regular-bold ml-2">24/7</p>
+                <p className="text-regular text-sm pt-4 align-middle">по Москве и Московской области</p>
+                <p className="text-regular-bold text-6xl ml-2">24/7</p>
               </div>
             </div> 
           </div>
         </div>
       </div>
       <div className="leanding-main">
-        <div className=" pb-7 w-full flex gap-x-6 justify-center pt-20">
-          <Price price="1800" text="Поездка в пределах МКАД"/>
-          <Price price="2000" text="Поездка за МКАД"/>
-          <Price price="2500" text="Поездка за ЦКАД"/>
+        <div className="gap-y-6 justify-center">
+              <Price price="1800" text="Поездка в пределах МКАД" />
+              <Price price="2000" text="Поездка за МКАД" />
+              <Price price="2500" text="Поездка за ЦКАД" />
         </div>
-        <p className="price-block-text-light">
+        <p className="price-block-text-light text-xs text-end">
         *Первый час включено 10км
         </p>
-        <div className="pt-16">
+        <div className=" pt-6">
           <div className=" advantages-text text-center">ДОВЕРЬТЕ ДЕЛО ПРОФЕССИОНАЛАМ</div>
           <h2 className=" text-regular-bold text-center">ПРЕИМУЩЕСТВА</h2>
+          <ul className=" pt-3" style={{
+            "list-style-image": {car},
+          }}>
+            <li>Водители стажем от 5 лет</li>
+            <li>Подача в течении 30 минут</li>
+            <li>качественный сервис</li>
+          </ul>
         </div>
-        <div className="grid grid-cols-12 gap-x-2  pt-9">
+        <div className="hidden grid-cols-12 gap-x-2 pt-9">
         <SlideBar />
         </div>
         <div className="grid grid-cols-12 grid-rows-2 gap-x-2">

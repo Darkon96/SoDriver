@@ -12,6 +12,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <meta name="yandex-verification" content="008e50b2267486d2" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" 
+      />
       <body className={inter.className}>
         {children} 
       </body>
