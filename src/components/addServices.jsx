@@ -11,7 +11,7 @@ const AddServices = () => {
                 alt="Wild Landscape"
                 className="block"
             />
-            <div className=' pl-9'>
+            <div className=' pl-1'>
                 <p className='w-full h-min price-block-text-bold text-start'>«Водитель на день»</p>
                 <p className=''>7 часов 7200₽ далее 450₽ 30 мин.</p>
             </div>

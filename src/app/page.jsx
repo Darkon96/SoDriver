@@ -74,16 +74,16 @@ export default function Home() {
                 className="col-start-1 col-span-5"
           />
           <div className="col-span-4 col-start-6">
-            <p className="bot-bold-text">
+            <p className="bot-bold-text text-xs">
             Выпили? Чувствуете себя нехорошо? Плохая погода? Не уверены о себе, как водитель?
             </p>
-            <p className="bot-bold-text">
+            <p className="bot-bold-text text-xs">
             Не подвергайтесь опасности - не садитесь за руль!
             </p>
-            <p className="indent">
+            <p className="indent text-xs">
             Воспользуйтесь сервисом "Трезвый водитель" и доберитесь домой без "приключений". Наш профессиональный водитель доставит вас, ваших пассажиров и машину до места назначения в целости и сохранности.
             </p>
-            <p className="indent">
+            <p className="indent text-xs">
             Наша компания располагает необходимым количеством трезвых водителей, так что Вы никогда не услышите на свой запрос отказа, связанного с нехваткой водителей. Основным преимуществом нашей компании являются умеренные тарифы различного класса.
             </p>
           </div> 
@@ -107,7 +107,6 @@ export default function Home() {
           />
         </div>
       </div>
-      <Footer />
     </main>
   );
 }

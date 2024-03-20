@@ -7,7 +7,7 @@ const Footer = () => {
                 <a href="tel:+79096298188" className="a-color col-start-1 col-span-3 row-span-1 row-start-2 text-end h-min">+7 (909) 629-81-88</a>
                 <div><a href="mailto:Tvojvoditel@gmail.com" className="a-color h-min">Tvojvoditel@gmail.com</a></div>
                 <div className="col-span-4 col-start-4 h-min">Адрес: г. Москва</div>
-            <div className="row-span-1 row-start-3 col-span-12 text-center ">
+            <div className="row-span-1 row-start-3 col-span-12 text-center">
                 <div>Компания Мой Трезвый Водитель © 2021</div>
                 <p className="bot-company-text">Авторские права: информация для правообладателей.По всем вопросам о возможном нарушение обращаться для взаимодействия на Tvojvoditel@gmail.com</p>
             </div>
