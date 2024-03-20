@@ -43,9 +43,8 @@ export default function Home() {
         *Первый час включено 10км
         </p>
         <div className=" pt-6">
-          <div className=" advantages-text text-center">ДОВЕРЬТЕ ДЕЛО ПРОФЕССИОНАЛАМ</div>
-          <h2 className=" text-regular-bold text-center">ПРЕИМУЩЕСТВА</h2>
-          <ul className=" pt-3" style={{
+          <h2 className=" text-regular-bold text-center">НАШИ ПРЕИМУЩЕСТВА</h2>
+          <ul className=" pt-3 " style={{
             "list-style-image": {car},
           }}>
             <li>Водители стажем от 5 лет</li>

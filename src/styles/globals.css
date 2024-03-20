@@ -72,13 +72,11 @@ a:active {
 }
 
 .price-block-text-bold {
-    font-weight: 900;
     font: regular Roboto, sans-serif;
     text-align: center;
 }
 
 .price-block-text-regular {
-    font-weight: 300;
     font: regular Roboto, sans-serif;
     text-align: center;
 }
