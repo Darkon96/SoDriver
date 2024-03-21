@@ -8,8 +8,8 @@ const Footer = () => {
                 <div><a href="mailto:Tvojvoditel@gmail.com" className="a-color h-min">Tvojvoditel@gmail.com</a></div>
                 <div className="col-span-4 col-start-4 h-min">Адрес: г. Москва</div>
             <div className="row-span-1 row-start-3 col-span-12 text-center">
-                <div>Компания Мой Трезвый Водитель © 2021</div>
-                <p className="bot-company-text">Авторские права: информация для правообладателей.По всем вопросам о возможном нарушение обращаться для взаимодействия на Tvojvoditel@gmail.com</p>
+                <div>Компания Мой Водитель © 2023</div>
+                <p className="bot-company-text text-xs">Авторские права: информация для правообладателей.По всем вопросам о возможном нарушение обращаться для взаимодействия на Tvojvoditel@gmail.com</p>
             </div>
         </footer>
     );
