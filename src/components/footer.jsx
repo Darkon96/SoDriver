@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <div className="footer bg-black grid grid-cols-12 grid-rows-3 gap-x-8 pt-3">
+        <footer className="footer bg-black grid grid-cols-12 grid-rows-3 gap-x-8 pt-3">
             <div className="col-span-3 text-end bot-bold-text h-min">
                 <div className="row-span-1">Круглосуточно 24/7</div>
             </div>
@@ -11,7 +11,7 @@ const Footer = () => {
                 <div>Компания Мой Трезвый Водитель © 2021</div>
                 <p className="bot-company-text">Авторские права: информация для правообладателей.По всем вопросам о возможном нарушение обращаться для взаимодействия на Tvojvoditel@gmail.com</p>
             </div>
-        </div>
+        </footer>
     );
 }
 

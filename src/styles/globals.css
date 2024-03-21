@@ -4,7 +4,8 @@
 @tailwind components;
 @tailwind utilities;
 
-/* * { border:1px solid red; box-sizing:border-box; } */
+* { border:0px solid red; box-sizing:border-box; }
+
 
 p, h1, h2, div {
     color: #FFFFFF;
@@ -109,4 +110,10 @@ a:active {
 .list {
     list-style: auto;
     list-style-type: disc;
+    margin-bottom: 0px;
+    padding-bottom: 30px;
+}
+
+.list > li {
+    padding-bottom: 10px;
 }

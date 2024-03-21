@@ -6,8 +6,6 @@ import Image from 'next/image';
 import car from '../assets/car-img.jpg';
 import carBot1 from '../assets/bot-car1.png';
 import carBot2 from '../assets/bot-car2.png';
-import vector from '../assets/vector.svg';
-import Footer from "../components/footer";
 
 const SlideBar = dynamic(() => import("../components/slideBar"), {
   ssr: false,
@@ -37,15 +35,15 @@ export default function Home() {
       <div className="leanding-main">
         <div className="gap-y-5 justify-center flex gap-x-6 flex-wrap">
               <Price price="1800" text="Поездка в пределах МКАД" />
-              <Price price="2000" text="Поездка за МКАД" />
-              <Price price="2500" text="Поездка за ЦКАД" />
+              <Price price="2000" text="Поездка за<br/>МКАД" />
+              <Price price="2500" text="Поездка за<br/>ЦКАД" />
         </div>
-        <p className="price-block-text-light text-xs text-end">
+        <p className="price-block-text-light text-xs text-end mt-3">
         *Первый час включено 10км
         </p>
-        <div className=" mt-6 pt-1 bg-gradient-to-r to-indigo-500">
+        <div className="mt-20 bg-gradient-to-r to-indigo-500">
           <h2 className=" text-regular-bold text-center">НАШИ ПРЕИМУЩЕСТВА</h2>
-          <ul className="mt-1 list">
+          <ul className="mt-1 list font-bold text-lg">
             <li>Водители стажем от 5 лет</li>
             <li>Подача в течении 30 минут</li>
             <li>Качественный сервис</li>
@@ -55,42 +53,42 @@ export default function Home() {
         <SlideBar />
         </div>
         <div className="grid grid-cols-12 gap-x-2">
-          <p className="col-span-12" style={{"text-indent": "25px"}}>Наш профессиональный водитель приедет на помощь, сядет за руль вашего автомобиля и отвезет вас домой или в нужное место. Быстро и безопасно.</p>
+          <p className="col-span-12 text-center mt-5" style={{"text-indent": "25px"}}>Наш профессиональный водитель приедет на помощь, сядет за руль вашего автомобиля и отвезет вас домой или в нужное место. Быстро и безопасно.</p>
         </div>
-          <h2 className="text-center pt-10">ДОПОЛНИТЕЛЬНЫЕ<br/> УСЛУГИ</h2>
-          <div className="flex flex-wrap justify-items-center justify-center mt-4">
+          <h2 className="text-center mt-10">ДОПОЛНИТЕЛЬНЫЕ<br/> УСЛУГИ</h2>
+          <div className="flex flex-wrap justify-items-center justify-center mt-4 gap-y-2">
             <AddServices />
             <AddServices />
           </div>
           <Image
                 src={carBot1}
                 alt="Wild Landscape"
-                className="col-start-1 col-span-5"
+                className="col-start-1 col-span-5 pt-10"
           />
           <div className="col-span-4 col-start-6">
-            <p className="bot-bold-text text-base mt-4 font-normal">
-            Выпили?<br/>Плохая погода?<br/>Чувствуете себя нехорошо?<br/>Не уверены в себе, как водитель?
+          <div className="bg-gradient-to-r from-neutral-200 to-neutral-400 mt-4 rounded-lg">
+            <p className="bot-bold-text text-base font-semibold text-neutral-900 text-center">
+              Выпили?<br />Плохая погода?<br />Чувствуете себя нехорошо?<br />Не уверены в себе, как водитель?
             </p>
-            <p className="bot-bold-text font-bold">
-            Не подвергайтесь опасности - не садитесь за руль!
+            <p className="bot-bold-text font-bold text-xl text-neutral-900 text-center">
+              Не подвергайтесь опасности - не садитесь за руль!
             </p>
-            <p className="indent text-xs">
+          </div>
+            <p className="indent text-base">
             Воспользуйтесь сервисом "Трезвый водитель" и доберитесь домой без "приключений". Наш профессиональный водитель доставит вас, ваших пассажиров и машину до места назначения в целости и сохранности.
             </p>
-            <p className="indent text-xs">
+            <p className="indent text-base">
             Наша компания располагает необходимым количеством трезвых водителей, так что Вы никогда не услышите на свой запрос отказа, связанного с нехваткой водителей. Основным преимуществом нашей компании являются умеренные тарифы различного класса.
             </p>
         </div>
         <Image
                 src={carBot2}
                 alt="Wild Landscape"
-                className="col-span-5 col-start-6"
+                className="col-span-5 col-start-6 mt-5"
           />
           <div className="col-start-1 col-span-5">
-            <p className="bot-bold-text">Наши тарифы ме имеют скрытых доплат. Гарантируем, стоимость не вырастет в процессе поездки.</p>
-            <ul style={{
-              'list-style-type': 'square',
-            }}>
+            <p className="bot-bold-text font-bold mt-5">Наши тарифы ме имеют скрытых доплат. Гарантируем, стоимость не вырастет в процессе поездки.</p>
+            <ul className="list">
               <li>Оплата остановок по заранее согласованному маршруту - отсутствует.</li>
               <li>Ночные или праздничные наценки - отсутствует.</li>
               <li>Оплата нашему водителю обратной дороги - за наш счёт.</li>
