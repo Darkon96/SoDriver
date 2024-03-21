@@ -107,3 +107,7 @@ a:active {
     text-underline-position: under;
     color:#575757;
 }
+.list {
+    list-style: auto;
+    list-style-type: disc;
+}

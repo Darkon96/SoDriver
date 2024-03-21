@@ -14,7 +14,10 @@ module.exports = {
     extend: {
       spacing: {
         '128': '20%',
-      }
+      },
+      listStyleImage: {
+        vector: 'url("/src/assets/vector.svg")',
+      },
     }
   },
   plugins: [require("tw-elements/plugin.cjs")]

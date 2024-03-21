@@ -6,6 +6,7 @@ import Image from 'next/image';
 import car from '../assets/car-img.jpg';
 import carBot1 from '../assets/bot-car1.png';
 import carBot2 from '../assets/bot-car2.png';
+import vector from '../assets/vector.svg';
 import Footer from "../components/footer";
 
 const SlideBar = dynamic(() => import("../components/slideBar"), {
@@ -42,22 +43,19 @@ export default function Home() {
         <p className="price-block-text-light text-xs text-end">
         *Первый час включено 10км
         </p>
-        <div className=" pt-6">
+        <div className=" mt-6 pt-1 bg-gradient-to-r to-indigo-500">
           <h2 className=" text-regular-bold text-center">НАШИ ПРЕИМУЩЕСТВА</h2>
-          <ul className=" pt-3 " style={{
-            "list-style-image": {car},
-          }}>
+          <ul className="mt-1 list">
             <li>Водители стажем от 5 лет</li>
             <li>Подача в течении 30 минут</li>
-            <li>качественный сервис</li>
+            <li>Качественный сервис</li>
           </ul>
         </div>
         <div className="hidden grid-cols-12 gap-x-2 pt-9">
         <SlideBar />
         </div>
         <div className="grid grid-cols-12 grid-rows-2 gap-x-2">
-          <p className="text-center pt-10 price-block-text-bold col-span-12">Не рискуйте!</p>
-          <p className="col-span-8 col-start-3 text-center ">Наш профессиональный водитель приедет на помощь, сядет за руль вашего автомобиля и отвезет вас домой или в нужное место. Быстро и безопасно.</p>
+          <p className="col-span-12 text-center ">Наш профессиональный водитель приедет на помощь, сядет за руль вашего автомобиля и отвезет вас домой или в нужное место. Быстро и безопасно.</p>
         </div>
         <div className=" pt-10">
           <h2 className="text-center">ДОПОЛНИТЕЛЬНЫЕ<br/> УСЛУГИ</h2>
