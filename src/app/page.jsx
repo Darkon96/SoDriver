@@ -35,7 +35,7 @@ export default function Home() {
         </div>
       </div>
       <div className="leanding-main">
-        <div className="gap-y-6 justify-center">
+        <div className="gap-y-5 justify-center flex gap-x-6 flex-wrap">
               <Price price="1800" text="Поездка в пределах МКАД" />
               <Price price="2000" text="Поездка за МКАД" />
               <Price price="2500" text="Поездка за ЦКАД" />
@@ -54,27 +54,24 @@ export default function Home() {
         <div className="hidden grid-cols-12 gap-x-2 pt-9">
         <SlideBar />
         </div>
-        <div className="grid grid-cols-12 grid-rows-2 gap-x-2">
-          <p className="col-span-12 text-center ">Наш профессиональный водитель приедет на помощь, сядет за руль вашего автомобиля и отвезет вас домой или в нужное место. Быстро и безопасно.</p>
+        <div className="grid grid-cols-12 gap-x-2">
+          <p className="col-span-12" style={{"text-indent": "25px"}}>Наш профессиональный водитель приедет на помощь, сядет за руль вашего автомобиля и отвезет вас домой или в нужное место. Быстро и безопасно.</p>
         </div>
-        <div className=" pt-10">
-          <h2 className="text-center">ДОПОЛНИТЕЛЬНЫЕ<br/> УСЛУГИ</h2>
-          <div className="flex justify-items-center justify-center col-span-8 col-start-3 pt-10 gap-x-10">
+          <h2 className="text-center pt-10">ДОПОЛНИТЕЛЬНЫЕ<br/> УСЛУГИ</h2>
+          <div className="flex flex-wrap justify-items-center justify-center mt-4">
             <AddServices />
             <AddServices />
           </div>
-        </div>
-        <div className="grid grid-cols-12 grid-rows-1 gap-x-8  pt-32">
           <Image
                 src={carBot1}
                 alt="Wild Landscape"
                 className="col-start-1 col-span-5"
           />
           <div className="col-span-4 col-start-6">
-            <p className="bot-bold-text text-xs">
-            Выпили? Чувствуете себя нехорошо? Плохая погода? Не уверены о себе, как водитель?
+            <p className="bot-bold-text text-base mt-4 font-normal">
+            Выпили?<br/>Плохая погода?<br/>Чувствуете себя нехорошо?<br/>Не уверены в себе, как водитель?
             </p>
-            <p className="bot-bold-text text-xs">
+            <p className="bot-bold-text font-bold">
             Не подвергайтесь опасности - не садитесь за руль!
             </p>
             <p className="indent text-xs">
@@ -83,9 +80,12 @@ export default function Home() {
             <p className="indent text-xs">
             Наша компания располагает необходимым количеством трезвых водителей, так что Вы никогда не услышите на свой запрос отказа, связанного с нехваткой водителей. Основным преимуществом нашей компании являются умеренные тарифы различного класса.
             </p>
-          </div> 
         </div>
-        <div className="grid grid-cols-12 grid-rows-1 gap-x-8 pt-16 pb-28">
+        <Image
+                src={carBot2}
+                alt="Wild Landscape"
+                className="col-span-5 col-start-6"
+          />
           <div className="col-start-1 col-span-5">
             <p className="bot-bold-text">Наши тарифы ме имеют скрытых доплат. Гарантируем, стоимость не вырастет в процессе поездки.</p>
             <ul style={{
@@ -97,13 +97,7 @@ export default function Home() {
               <li>Отсутствие расширенной страховки ОСАГО - за наш счёт.</li>
             </ul>
           </div>
-          <Image
-                src={carBot2}
-                alt="Wild Landscape"
-                className="col-span-5 col-start-6"
-          />
         </div>
-      </div>
     </main>
   );
 }
