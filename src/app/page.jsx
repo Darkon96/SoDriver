@@ -19,7 +19,7 @@ export default function Home() {
       }}>
         <div className="h-screen col-span-12">
           <div className="flex justify-end">
-            <a href="tel:+79096298188" className="text-regular mt-8 xl:text-xl">+7 (909) 629-81-88</a>
+            <a href="tel:+79096298188" className="text-regular mt-8 xl:text-xl 2xl:text-2xl">+7 (909) 629-81-88</a>
           </div>
           <div className="grid grid-cols-12 gap-x-2">
             <div className="col-span-12 md:col-span-7">
@@ -78,15 +78,15 @@ export default function Home() {
             </p>
           </div>
           </div>
-          <div className="flex flex-wrap justify-center">
-            <p className="text-base text-center mt-5" style={{ 'width': '500px' }}>
+          <div className="flex flex-wrap justify-center xl:mb-5">
+            <p className="text-base text-start mt-5" style={{ 'width': '500px' }}>
               Воспользуйтесь сервисом "Трезвый водитель" и доберитесь домой без "приключений". Наш профессиональный водитель доставит вас, ваших пассажиров и машину до места назначения в целости и сохранности.
             </p>
-            <p className="text-base text-center mt-5" style={{ 'width': '500px' }}>
+            <p className="text-base text-start mt-5 gap-x-5 xl:pl-7" style={{ 'width': '500px' }}>
               Наша компания располагает необходимым количеством трезвых водителей, так что Вы никогда не услышите на свой запрос отказа, связанного с нехваткой водителей. Основным преимуществом нашей компании являются умеренные тарифы различного класса.
             </p>
           </div>
-          <div className="flex flex-wrap justify-center col-span-8 col-start-3 gap-x-5">
+          <div className="flex flex-wrap justify-center col-span-8 col-start-3 gap-x-5 xl:pb-5">
           <Image
             src={carBot2}
             alt="Wild Landscape"
