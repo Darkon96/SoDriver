@@ -62,6 +62,7 @@ export default function Home() {
           <AddServices  price="от 7500 руб." text="Трансфер в другой город"/>
           <AddServices  price="от 2500 руб." text="Водитель на мотоцикле"/>
         </div>
+        <div className=" grid-cols-12 grid-rows-3 gap-x-2">
         <div className="flex flex-wrap justify-center gap-x-4">
             <Image
             src={carBot1}
@@ -76,18 +77,22 @@ export default function Home() {
               Не подвергайтесь опасности - не садитесь за руль!
             </p>
           </div>
-          <p className="text-base text-center mt-5" style={{'width': '500px'}}>
-            Воспользуйтесь сервисом "Трезвый водитель" и доберитесь домой без "приключений". Наш профессиональный водитель доставит вас, ваших пассажиров и машину до места назначения в целости и сохранности.
-          </p>
-          <p className="text-base text-center mb-0 mt-5" style={{'width': '500px'}}>
-            Наша компания располагает необходимым количеством трезвых водителей, так что Вы никогда не услышите на свой запрос отказа, связанного с нехваткой водителей. Основным преимуществом нашей компании являются умеренные тарифы различного класса.
-          </p>
+          </div>
+          <div className="flex flex-wrap justify-center">
+            <p className="text-base text-center mt-5" style={{ 'width': '500px' }}>
+              Воспользуйтесь сервисом "Трезвый водитель" и доберитесь домой без "приключений". Наш профессиональный водитель доставит вас, ваших пассажиров и машину до места назначения в целости и сохранности.
+            </p>
+            <p className="text-base text-center mt-5" style={{ 'width': '500px' }}>
+              Наша компания располагает необходимым количеством трезвых водителей, так что Вы никогда не услышите на свой запрос отказа, связанного с нехваткой водителей. Основным преимуществом нашей компании являются умеренные тарифы различного класса.
+            </p>
+          </div>
+          <div className="flex flex-wrap justify-center col-span-8 col-start-3 gap-x-5">
           <Image
             src={carBot2}
             alt="Wild Landscape"
-            className="col-span-5 col-start-6 mt-5"
+            className=""
           />
-          <div className="col-start-1 col-span-5">
+          <div style={{'maxWidth':'500px'}}>
             <p className="bot-bold-text font-bold mt-5">Наши тарифы ме имеют скрытых доплат. Гарантируем, стоимость не вырастет в процессе поездки.</p>
             <ul className="list">
               <li>Оплата остановок по заранее согласованному маршруту - отсутствует.</li>
@@ -95,8 +100,9 @@ export default function Home() {
               <li>Оплата нашему водителю обратной дороги - за наш счёт.</li>
               <li>Отсутствие расширенной страховки ОСАГО - за наш счёт.</li>
             </ul>
+            </div>
           </div>
-        </div>
+          </div>
       </div>
     </main>
   );
