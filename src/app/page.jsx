@@ -19,7 +19,7 @@ export default function Home() {
       }}>
         <div className="h-screen col-span-12">
           <div className="flex justify-end">
-            <a href="tel:+79096298188" className="text-regular mt-8">+7 (909) 629-81-88</a>
+            <a href="tel:+79096298188" className="text-regular mt-8 xl:text-xl">+7 (909) 629-81-88</a>
           </div>
           <div className="grid grid-cols-12 gap-x-2">
             <div className="col-span-12 md:col-span-7">
