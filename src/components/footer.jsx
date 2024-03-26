@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="bot-bold-text h-min ">Круглосуточно 24/7</div>
             <div><a href="mailto:Tvojvoditel@gmail.com" className="a-color h-min">Tvojvoditel@gmail.com</a></div>
             <div className="text-center mt-3">Компания Мой Водитель © 2023</div>
-            <p className="bot-company-text text-xs mb-0 text-left">Авторские права: информация для правообладателей.По всем вопросам о возможном нарушение обращаться для взаимодействия на Tvojvoditel@gmail.com</p>
+            <p className="bot-company-text text-xs mb-0 text-center">Авторские права: информация для правообладателей.По всем вопросам о возможном нарушение обращаться для взаимодействия на Tvojvoditel@gmail.com</p>
         </footer>
     );
 }

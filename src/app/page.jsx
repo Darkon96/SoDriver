@@ -25,7 +25,7 @@ export default function Home() {
             <div className="col-span-12 md:col-span-7">
               <h1 className="text-bold-h1 text-5xl">ТРЕЗВЫЙ ВОДИТЕЛЬ</h1>
               <div className="flex">
-                <p className="text-regular text-sm pt-4 align-middle">по Москве и Московской области</p>
+                <p className="text-regular text-sm pt-4 align-middle xl:text-xl">по Москве и Московской области</p>
                 <p className="text-regular-bold text-6xl ml-2">24/7</p>
               </div>
             </div>
@@ -38,7 +38,7 @@ export default function Home() {
           <Price price="2000" text="Поездка за<br/>МКАД" />
           <Price price="2500" text="Поездка за<br/>ЦКАД" />
         </div>
-        <p className="price-block-text-light text-xs text-end mt-3 mr-14">
+        <p className="price-block-text-light text-xs text-end mt-3 mr-14 xl:pr-28">
           *Первый час включено 10км
         </p>
         <div className="mt-20 bg-gradient-to-r to-indigo-500">
@@ -55,31 +55,31 @@ export default function Home() {
           <SlideBar />
         </div>
         <div className="grid grid-cols-12 gap-x-2">
-          <p className="col-span-12 text-center mt-5" style={{ "text-indent": "25px" }}>Наш профессиональный водитель приедет на помощь, сядет за руль вашего автомобиля и отвезет вас домой или в нужное место. Быстро и безопасно.</p>
+          <p className="col-span-12 text-center mt-5 xl:col-span-6 xl:col-start-4" style={{ "text-indent": "25px" }}>Наш профессиональный водитель приедет на помощь, сядет за руль вашего автомобиля и отвезет вас домой или в нужное место. Быстро и безопасно.</p>
         </div>
         <h2 className="text-center mt-10">ДОПОЛНИТЕЛЬНЫЕ<br /> УСЛУГИ</h2>
-        <div className="flex flex-wrap justify-items-center justify-center mt-4 gap-y-2 gap-x-5">
-          <AddServices />
-          <AddServices />
+        <div className="flex flex-wrap justify-items-center justify-center mt-4 gap-y-2 gap-x-8">
+          <AddServices  price="от 7500 руб." text="Трансфер в другой город"/>
+          <AddServices  price="от 2500 руб." text="Водитель на мотоцикле"/>
         </div>
-        <div className="flex flex-wrap justify-center">
+        <div className="flex flex-wrap justify-center gap-x-4">
             <Image
             src={carBot1}
             alt="Wild Landscape"
-            className="size-full max-w-xl pt-10"
+            className="size-full max-w-xl pt-10 xl:pt-6"
             />
-          <div className="bg-gradient-to-r from-neutral-200 to-neutral-400 mt-4 rounded-lg max-w-max md:min-w-max h-min">
-            <p className="bot-bold-text text-base font-semibold text-neutral-900 text-center">
+          <div className="bg-gradient-to-r from-neutral-200 to-neutral-400 mt-4 rounded-lg max-w-max md:min-w-max xl:min-h-fit self-center">
+            <p className="bot-bold-text text-base font-semibold text-neutral-900 text-center pt-3">
               Выпили?<br />Плохая погода?<br />Чувствуете себя нехорошо?<br />Не уверены в себе, как водитель?
             </p>
             <p className="bot-bold-text font-bold text-xl text-neutral-900 text-center p-2">
               Не подвергайтесь опасности - не садитесь за руль!
             </p>
           </div>
-          <p className="text-base mt-5 text-center">
+          <p className="text-base text-center mt-5" style={{'width': '500px'}}>
             Воспользуйтесь сервисом "Трезвый водитель" и доберитесь домой без "приключений". Наш профессиональный водитель доставит вас, ваших пассажиров и машину до места назначения в целости и сохранности.
           </p>
-          <p className="text-base mt-5 text-center">
+          <p className="text-base text-center mb-0 mt-5" style={{'width': '500px'}}>
             Наша компания располагает необходимым количеством трезвых водителей, так что Вы никогда не услышите на свой запрос отказа, связанного с нехваткой водителей. Основным преимуществом нашей компании являются умеренные тарифы различного класса.
           </p>
           <Image
