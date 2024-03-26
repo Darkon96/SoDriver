@@ -90,9 +90,9 @@ export default function Home() {
           <Image
             src={carBot2}
             alt="Wild Landscape"
-            className=""
+            className="xl:order-last"
           />
-          <div style={{'maxWidth':'500px'}}>
+          <div className="" style={{'maxWidth':'500px'}}>
             <p className="bot-bold-text font-bold mt-5">Наши тарифы ме имеют скрытых доплат. Гарантируем, стоимость не вырастет в процессе поездки.</p>
             <ul className="list">
               <li>Оплата остановок по заранее согласованному маршруту - отсутствует.</li>
@@ -101,6 +101,7 @@ export default function Home() {
               <li>Отсутствие расширенной страховки ОСАГО - за наш счёт.</li>
             </ul>
             </div>
+            
           </div>
           </div>
       </div>
