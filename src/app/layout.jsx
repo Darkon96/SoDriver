@@ -5,8 +5,13 @@ import Footer from "../components/footer";
 const inter = Inter({ subsets: ["cyrillic", "latin"] });
 
 export const metadata = {
-  title: "SoDriver",
-  description: "Трезвый водитель",
+  type: "website",
+  url: "https://example.com",
+  title: "Заказать трезвого водителя",
+  description: "В любое время мы готовы предоставить трезвого водителя в Москве и МО, стаж водителей от 10 лет. Приемлемые цены от 1800 руб.",
+  keywords: ['трезвый водитель', 'заказ трезвого водителя', 'водитель онлайн', 'водитель он-лайн', 'трезвый водитель он-лайн', 'трезвый водитель онлайн', 'трезвый водитель премиум'],
+  creator: 'Darkon96',
+  openGraph: { type: "website", url: "http://tvoytrezvyyvoditel.ru", title: "Заказать трезвого водителя", description: "В любое время мы готовы предоставить трезвого водителя в Москве и МО, стаж водителей от 10 лет. Приемлемые цены от 1800 руб.", siteName: "SoDriver"}
 };
 
 export default function RootLayout({ children }) {

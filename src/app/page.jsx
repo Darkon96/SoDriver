@@ -101,7 +101,6 @@ export default function Home() {
               <li>Отсутствие расширенной страховки ОСАГО - за наш счёт.</li>
             </ul>
             </div>
-            
           </div>
           </div>
       </div>
