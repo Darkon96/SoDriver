@@ -17,10 +17,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <link rel="icon" href="/favicon.ico" sizes="any" />
-      <meta name="yandex-verification" content="008e50b2267486d2" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" 
-      />
+      <head>
+        <meta name="yandex-verification" content="008e50b2267486d2" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
       <body className={inter.className}>
         {children}
         <Footer />
