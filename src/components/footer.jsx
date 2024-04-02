@@ -1,6 +1,7 @@
 const Footer = () => {
     return (
         <footer className="footer bg-black">
+            <a id="footer" />
             <div className="pt-3">
                 <a href="tel:+79096298188" className="a-color text-regular h-min">+7 (909) 629-81-88</a>
             </div>

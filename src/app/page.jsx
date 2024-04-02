@@ -41,6 +41,7 @@ export default function Home() {
         <p className="price-block-text-light text-xs text-end mt-3 mr-14 xl:pr-28">
           *Первый час включено 10км
         </p>
+        <a id="advantage" />
         <div className="mt-20 bg-gradient-to-r to-indigo-500">
           <h2 className=" text-regular-bold text-center">НАШИ ПРЕИМУЩЕСТВА</h2>
           <div className="flex justify-center">
@@ -54,6 +55,7 @@ export default function Home() {
         <div className="hidden grid-cols-12 gap-x-2 pt-9">
           <SlideBar />
         </div>
+        <a id="addServices" />
         <div className="grid grid-cols-12 gap-x-2">
           <p className="col-span-12 text-center mt-5 xl:col-span-6 xl:col-start-4" style={{ "text-indent": "25px" }}>Наш профессиональный водитель приедет на помощь, сядет за руль вашего автомобиля и отвезет вас домой или в нужное место. Быстро и безопасно.</p>
         </div>
