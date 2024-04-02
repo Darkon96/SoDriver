@@ -18,8 +18,8 @@ export default function Home() {
         'backgroundImage': `url(${car.src})`,
       }}>
         <div className="h-screen col-span-12">
-          <div className="flex justify-end">
-            <a href="tel:+79096298188" className="text-regular mt-8 xl:text-xl 2xl:text-2xl">+7 (909) 629-81-88</a>
+          <div className="flex justify-end mt-8">
+            <a href="tel:+79096298188" className="text-regular xl:text-xl 2xl:text-2xl max-h-min">+7 (909) 629-81-88</a>
           </div>
           <div className="grid grid-cols-12 gap-x-2">
             <div className="col-span-12 md:col-span-7">
