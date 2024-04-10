@@ -21,7 +21,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-12 gap-x-2">
             <div className="col-span-12 md:col-span-7">
-              <h1 className="text-bold-h1 text-5xl pt-[40vh] md:pt-[50vh]">ТРЕЗВЫЙ ВОДИТЕЛЬ</h1>
+              <h1 className="text-bold-h1 text-5xl pt-[40vh] md:pt-[50vh] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">ТРЕЗВЫЙ ВОДИТЕЛЬ</h1>
               <div className="flex">
                 <p className="text-regular text-lg md:pt-4 align-middle xl:text-xl">по Москве и Московской области</p>
                 <p className="text-regular-bold text-6xl ml-2">24/7</p>
