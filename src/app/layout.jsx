@@ -1,8 +1,9 @@
 import { Inter } from "next/font/google";
 import "../styles/globals.css";
 import Footer from "../components/footer";
-
 const inter = Inter({ subsets: ["cyrillic", "latin"] });
+import { Suspense } from "react";
+import { Metrika } from "../components/metrika";
 
 export const metadata = {
   type: "website",
@@ -24,6 +25,9 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         {children}
         <Footer />
+        <Suspense>
+          <Metrika />
+        </Suspense>
       </body>
     </html>
   );

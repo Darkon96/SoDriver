@@ -1,15 +1,13 @@
 import Price from "../components/priceBlock";
 import AddServices from "../components/addServices";
+import WhatsApp from "../components/WhatsApp";
+
 import 'bootstrap/dist/css/bootstrap.css'
-import dynamic from "next/dynamic";
 import Image from 'next/image';
 import car from '../assets/car-img.jpg';
 import carBot1 from '../assets/bot-car1.png';
 import carBot2 from '../assets/bot-car2.png';
 
-const SlideBar = dynamic(() => import("../components/slideBar"), {
-  ssr: false,
-});
 
 export default function Home() {
   return (
@@ -18,16 +16,17 @@ export default function Home() {
         'backgroundImage': `url(${car.src})`,
       }}>
         <div className="h-screen col-span-12">
-          <div className="flex justify-end mt-8">
-            <a href="tel:+79096298188" className="text-regular xl:text-xl 2xl:text-2xl max-h-min">+7 (909) 629-81-88</a>
+        <div className="flex justify-end mt-8">
+            <WhatsApp />
           </div>
           <div className="grid grid-cols-12 gap-x-2">
             <div className="col-span-12 md:col-span-7">
               <h1 className="text-bold-h1 text-5xl">ТРЕЗВЫЙ ВОДИТЕЛЬ</h1>
               <div className="flex">
-                <p className="text-regular text-sm pt-4 align-middle xl:text-xl">по Москве и Московской области</p>
+                <p className="text-regular text-lg pt-4 align-middle xl:text-xl">по Москве и Московской области</p>
                 <p className="text-regular-bold text-6xl ml-2">24/7</p>
               </div>
+              <a href="tel:+79096298188" className="text-regular text-4xl xl:text-4xl 2xl:text-5xl max-h-min no-underline">+7 (909) 629-81-88</a>
             </div>
           </div>
         </div>
@@ -52,12 +51,9 @@ export default function Home() {
             </ul>
           </div>
         </div>
-        <div className="hidden grid-cols-12 gap-x-2 pt-9">
-          <SlideBar />
-        </div>
         <a id="addServices" />
         <div className="grid grid-cols-12 gap-x-2">
-          <p className="col-span-12 text-center mt-5 xl:col-span-6 xl:col-start-4" style={{ "text-indent": "25px" }}>Наш профессиональный водитель приедет на помощь, сядет за руль вашего автомобиля и отвезет вас домой или в нужное место. Быстро и безопасно.</p>
+          <p className="col-span-12 text-center mt-5 xl:col-span-6 xl:col-start-4" style={{ "textIndent": "25px" }}>Наш профессиональный водитель приедет на помощь, сядет за руль вашего автомобиля и отвезет вас домой или в нужное место. Быстро и безопасно.</p>
         </div>
         <h2 className="text-center mt-10">ДОПОЛНИТЕЛЬНЫЕ<br /> УСЛУГИ</h2>
         <div className="flex flex-wrap justify-items-center justify-center mt-4 gap-y-2 gap-x-8">
