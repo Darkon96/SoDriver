@@ -33,7 +33,6 @@ a:active {
 .text-bold-h1 {
     font-weight: 600;
     font: bold Roboto, sans-serif;
-    padding-top: 50vh;
     text-align: left;
     line-height: 1.2em;
 }

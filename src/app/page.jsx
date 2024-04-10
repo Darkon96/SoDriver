@@ -21,12 +21,12 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-12 gap-x-2">
             <div className="col-span-12 md:col-span-7">
-              <h1 className="text-bold-h1 text-5xl">ТРЕЗВЫЙ ВОДИТЕЛЬ</h1>
+              <h1 className="text-bold-h1 text-5xl pt-[40vh] md:pt-[50vh]">ТРЕЗВЫЙ ВОДИТЕЛЬ</h1>
               <div className="flex">
-                <p className="text-regular text-lg pt-4 align-middle xl:text-xl">по Москве и Московской области</p>
+                <p className="text-regular text-lg md:pt-4 align-middle xl:text-xl">по Москве и Московской области</p>
                 <p className="text-regular-bold text-6xl ml-2">24/7</p>
               </div>
-              <a href="tel:+79096298188" className="text-regular text-4xl xl:text-4xl 2xl:text-5xl max-h-min no-underline">+7 (909) 629-81-88</a>
+              <a href="tel:+79096298188" className="text-regular text-3xl xl:text-4xl 2xl:text-5xl max-h-min no-underline">+7 (909) 629-81-88</a>
             </div>
           </div>
         </div>
